@@ -7,11 +7,20 @@ import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // Wrap the App component with the Router component to enable the router features.
-ReactDOM.render(
-  <StrictMode>
+// ReactDOM.render(
+//   <StrictMode>
+//     <Router>
+//       <App />
+//     </Router>
+//   </StrictMode>,
+//   document.getElementById("root")
+// );
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <StrictMode>
     <Router>
       <App />
     </Router>
   </StrictMode>,
-  document.getElementById("root")
 );
